@@ -1,14 +1,600 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <meta name="description" content="Pousada Paraíso - Seu refúgio perfeito na natureza. Conforto, exclusividade e experiências inesquecíveis esperam por você.">
+  <title>Chalés do Bentinho</title>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-  <h1>Hello World</h1>
+  <!-- Header -->
+  <header id="header">
+    <div class="container">
+      <nav>
+        <a href="#" class="logo">Chalés do Bentinho<ul class="nav-links" id="navLinks">
+            <li><a href="#beneficios">Benefícios</a></li>
+            <li><a href="#galeria">Galeria</a></li>
+            <li><a href="#quartos">Quartos</a></li>
+            <li><a href="#depoimentos">Depoimentos</a></li>
+            <li><a href="#localizacao">Localização</a></li>
+            <li><a href="#reservar" class="nav-cta">Reservar Agora</a></li>
+          </ul>
+          <button class="mobile-toggle" id="mobileToggle" aria-label="Menu">
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="hero-content">
+      <span class="hero-badge">✨ Bem-vindo a São Tomé das Letras</span>
+      <h1>Lugar de Descanso e Descobertas</h1>
+      <p>Um refúgio exclusivo onde natureza, hospitalidade e aventuras se encontram para criar experiências inesquecíveis.</p>
+      <div class="hero-buttons">
+        <a href="#reservar" class="btn btn-primary">Reservar Agora</a>
+        <a href="#quartos" class="btn btn-outline">Conhecer Quartos</a>
+      </div>
+    </div>
+    <div class="scroll-indicator">
+      <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M12 5v14M19 12l-7 7-7-7" />
+      </svg>
+    </div>
+  </section>
+
+  <!-- Benefits Section -->
+  <section class="benefits" id="beneficios">
+    <div class="container">
+      <div class="fade-in">
+        <h2 class="section-title" style="text-align: center;">Por Que Escolher Nossa Pousada</h2>
+        <p class="section-subtitle" style="text-align: center;">Cada detalhe foi pensado para proporcionar a você uma experiência única e acolhedora.</p>
+      </div>
+      <div class="benefits-grid">
+        <div class="benefit-card fade-in">
+          <div class="benefit-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z" />
+              <polyline points="9 22 9 12 15 12 15 22" />
+            </svg>
+          </div>
+          <h3>Conforto Premium</h3>
+          <p>Quartos espaçosos com camas king size, roupa de cama egípcia e amenidades de luxo para o seu máximo conforto.</p>
+        </div>
+        <div class="benefit-card fade-in">
+          <div class="benefit-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <circle cx="12" cy="12" r="5" />
+              <path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42" />
+            </svg>
+          </div>
+          <h3>Café da Manhã Incluso</h3>
+          <p>Você está em Minas uai! Pão de queijo e cafezin quentinho não faltam.</p>
+        </div>
+        <div class="benefit-card fade-in">
+          <div class="benefit-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z" />
+              <circle cx="12" cy="10" r="3" />
+            </svg>
+          </div>
+          <h3>Localização Privilegiada</h3>
+          <p>Situada próximo a Igreja de Pedra a 200m do centro da cidade.</p>
+        </div>
+        <div class="benefit-card fade-in">
+          <div class="benefit-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" />
+            </svg>
+          </div>
+          <h3>Segurança</h3>
+          <p>Monitoramento 24h, ficamos despertos para que você se sinta livre mas se precisar será como se estivesse na sua casa.</p>
+        </div>
+        <div class="benefit-card fade-in">
+          <div class="benefit-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <rect x="2" y="7" width="20" height="14" rx="2" ry="2" />
+              <path d="M16 21V5a2 2 0 00-2-2h-4a2 2 0 00-2 2v16" />
+            </svg>
+          </div>
+          <h3>Wi-Fi de Alta Velocidade</h3>
+          <p>Conexão fibra óptica em todas as áreas para quem precisa trabalhar ou apenas compartilhar momentos especiais.</p>
+        </div>
+        <div class="benefit-card fade-in">
+          <div class="benefit-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M14.7 6.3a1 1 0 000 1.4l1.6 1.6a1 1 0 001.4 0l3.77-3.77a6 6 0 01-7.94 7.94l-6.91 6.91a2.12 2.12 0 01-3-3l6.91-6.91a6 6 0 017.94-7.94l-3.76 3.76z" />
+            </svg>
+          </div>
+          <h3>Atendimento Personalizado</h3>
+          <p>Somos apaixonados por estórias, conte-nos por onde tens andado. Caso não queira indicamos locais para silenciar.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Gallery Section -->
+  <section class="gallery" id="galeria">
+    <div class="container">
+      <div class="fade-in">
+        <h2 class="section-title" style="text-align: center;">Galeria de Imagens</h2>
+        <p class="section-subtitle" style="text-align: center;">Cada canto da nossa pousada foi projetado para encantar e inspirar.</p>
+      </div>
+      <div class="gallery-grid">
+        <div class="gallery-item fade-in">
+          <img src="./img/veudenoiva.jpg" alt="Vista principal da pousada">
+          <div class="gallery-overlay">
+            <span>Cachoeira véu de noiva</span>
+          </div>
+        </div>
+        <div class="gallery-item fade-in">
+          <img src="./img/img3.JPG" alt="Quarto luxuoso">
+          <div class="gallery-overlay">
+            <span>Leite</span>
+          </div>
+        </div>
+        <div class="gallery-item fade-in">
+          <img src="./img/img4.JPG" alt="Área de piscina">
+          <div class="gallery-overlay">
+            <span>Brinquedo</span>
+          </div>
+        </div>
+        <div class="gallery-item fade-in">
+          <img src="./img/img1.JPG" alt="Jardim e natureza">
+          <div class="gallery-overlay">
+            <span>Roça</span>
+          </div>
+        </div>
+        <div class="gallery-item fade-in">
+          <img src="./img/img2.JPG" alt="Restaurante">
+          <div class="gallery-overlay">
+            <span>Tia Zezé</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Rooms Section -->
+  <section class="rooms" id="quartos">
+    <div class="container">
+      <div class="fade-in">
+        <h2 class="section-title" style="text-align: center;">Nossos Quartos</h2>
+        <p class="section-subtitle" style="text-align: center;">Escolha a acomodação perfeita para o seu tipo de viagem.</p>
+      </div>
+      <div class="rooms-grid">
+        <div class="room-card fade-in">
+          <div class="room-image">
+            <img src="https://images.unsplash.com/photo-1618773928121-c32242e63f39?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Suíte Romântica">
+            <span class="room-badge">Mais Popular</span>
+          </div>
+          <div class="room-content">
+            <h3>Suíte Romântica</h3>
+            <p>Perfeita para casais, com vista panorâmica, hidromassagem privativa e decoração sofisticada.</p>
+            <div class="room-features">
+              <span class="room-feature">
+                <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z" />
+                </svg>
+                45m²
+              </span>
+              <span class="room-feature">
+                <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2" />
+                  <circle cx="9" cy="7" r="4" />
+                  <path d="M23 21v-2a4 4 0 00-3-3.87M16 3.13a4 4 0 010 7.75" />
+                </svg>
+                2 Pessoas
+              </span>
+              <span class="room-feature">
+                <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <rect x="3" y="3" width="18" height="18" rx="2" />
+                  <path d="M3 9h18M9 21V9" />
+                </svg>
+                Vista espetacular
+              </span>
+            </div>
+            <div class="room-footer">
+              <div class="room-price">R$ 150 <span>/ noite</span></div>
+              <a href="#reservar" class="btn btn-primary">Reservar</a>
+            </div>
+          </div>
+        </div>
+        <div class="room-card fade-in">
+          <div class="room-image">
+            <img src="https://images.unsplash.com/photo-1595526114035-0d45ed16cfbf?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Quarto Familiar">
+          </div>
+          <div class="room-content">
+            <h3>Quarto Familiar</h3>
+            <p>Espaçoso e acolhedor, ideal para famílias. Conta com varanda gourmet e área de estar separada.</p>
+            <div class="room-features">
+              <span class="room-feature">
+                <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z" />
+                </svg>
+                65m²
+              </span>
+              <span class="room-feature">
+                <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2" />
+                  <circle cx="9" cy="7" r="4" />
+                  <path d="M23 21v-2a4 4 0 00-3-3.87M16 3.13a4 4 0 010 7.75" />
+                </svg>
+                4 Pessoas
+              </span>
+              <span class="room-feature">
+                <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <rect x="3" y="3" width="18" height="18" rx="2" />
+                  <path d="M3 9h18M9 21V9" />
+                </svg>
+                Sobrado
+              </span>
+            </div>
+            <div class="room-footer">
+              <div class="room-price">R$ 150 <span>/ noite</span></div>
+              <a href="#reservar" class="btn btn-primary">Reservar</a>
+            </div>
+          </div>
+        </div>
+        <div class="room-card fade-in">
+          <div class="room-image">
+            <img src="https://images.unsplash.com/photo-1595526114035-0d45ed16cfbf?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Suíte Presidencial">
+            <span class="room-badge">Exclusivo</span>
+          </div>
+          <div class="room-content">
+            <h3>Quarto </h3>
+            <p>Sem luxo somente conforto.</p>
+            <div class="room-features">
+              <span class="room-feature">
+                <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z" />
+                </svg>
+                120m²
+              </span>
+              <span class="room-feature">
+                <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2" />
+                  <circle cx="9" cy="7" r="4" />
+                  <path d="M23 21v-2a4 4 0 00-3-3.87M16 3.13a4 4 0 010 7.75" />
+                </svg>
+                6 Pessoas
+              </span>
+              <span class="room-feature">
+                <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" />
+                </svg>
+                Comum
+              </span>
+            </div>
+            <div class="room-footer">
+              <div class="room-price">R$ 150 <span>/ noite</span></div>
+              <a href="#reservar" class="btn btn-primary">Reservar</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonials Section -->
+  <section class="testimonials" id="depoimentos">
+    <div class="container">
+      <div class="fade-in">
+        <h2 class="section-title" style="text-align: center;">O Que os Nossos Hóspedes Dizem</h2>
+        <p class="section-subtitle" style="text-align: center;">Histórias reais de quem já viveu experiências inesquecíveis.</p>
+      </div>
+      <div class="testimonials-grid">
+        <div class="testimonial-card fade-in">
+          <div class="testimonial-stars">
+            <svg viewBox="0 0 24 24">
+              <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" />
+            </svg>
+            <svg viewBox="0 0 24 24">
+              <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" />
+            </svg>
+            <svg viewBox="0 0 24 24">
+              <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" />
+            </svg>
+            <svg viewBox="0 0 24 24">
+              <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" />
+            </svg>
+            <svg viewBox="0 0 24 24">
+              <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" />
+            </svg>
+          </div>
+          <p class="testimonial-text">"Experiência absolutamente mágica! Desde o check-in até o último dia, fomos tratados como realeza. A Suíte Romântica superou todas as expectativas. Voltaremos com certeza!"</p>
+          <div class="testimonial-author">
+            <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-4.0.3&auto=format&fit=crop&w=150&q=80" alt="Mariana Costa" class="testimonial-avatar">
+            <div class="testimonial-info">
+              <h4>Mariana Costa</h4>
+              <p>São Paulo, SP</p>
+            </div>
+          </div>
+        </div>
+        <div class="testimonial-card fade-in">
+          <div class="testimonial-stars">
+            <svg viewBox="0 0 24 24">
+              <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" />
+            </svg>
+            <svg viewBox="0 0 24 24">
+              <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" />
+            </svg>
+            <svg viewBox="0 0 24 24">
+              <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" />
+            </svg>
+            <svg viewBox="0 0 24 24">
+              <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" />
+            </svg>
+            <svg viewBox="0 0 24 24">
+              <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" />
+            </svg>
+          </div>
+          <p class="testimonial-text">"Lugar perfeito para descansar em família. O Quarto Familiar é incrível e as crianças adoraram a piscina. O café da manhã é simplesmente espetacular!"</p>
+          <div class="testimonial-author">
+            <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&auto=format&fit=crop&w=150&q=80" alt="Ricardo Oliveira" class="testimonial-avatar">
+            <div class="testimonial-info">
+              <h4>Ricardo Oliveira</h4>
+              <p>Belo Horizonte, MG</p>
+            </div>
+          </div>
+        </div>
+        <div class="testimonial-card fade-in">
+          <div class="testimonial-stars">
+            <svg viewBox="0 0 24 24">
+              <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" />
+            </svg>
+            <svg viewBox="0 0 24 24">
+              <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" />
+            </svg>
+            <svg viewBox="0 0 24 24">
+              <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" />
+            </svg>
+            <svg viewBox="0 0 24 24">
+              <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" />
+            </svg>
+            <svg viewBox="0 0 24 24">
+              <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" />
+            </svg>
+          </div>
+          <p class="testimonial-text">"Já me hospedei em hotéis 5 estrelas pelo mundo, e a Pousada Paraíso está entre os melhores. Atendimento impecável e atenção aos detalhes que faz toda diferença."</p>
+          <div class="testimonial-author">
+            <img src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?ixlib=rb-4.0.3&auto=format&fit=crop&w=150&q=80" alt="Fernanda Santos" class="testimonial-avatar">
+            <div class="testimonial-info">
+              <h4>Fernanda Santos</h4>
+              <p>Rio de Janeiro, RJ</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Location Section -->
+  <section class="location" id="localizacao">
+    <div class="container">
+      <div class="location-content">
+        <div class="location-info fade-in">
+          <h3>Localização Privilegiada</h3>
+          <p>Muito bem situada, nossa pousada oferece o equilíbrio perfeito entre isolamento e festa, descanso e atividade.</p>
+          <ul class="location-features">
+            <li>
+              <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z" />
+                <circle cx="12" cy="10" r="3" />
+              </svg>
+              5 minutos do centro da cidade
+            </li>
+            <li>
+              <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z" />
+                <circle cx="12" cy="10" r="3" />
+              </svg>
+              10 minutos das principais cachoeiras
+            </li>
+            <li>
+              <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z" />
+                <circle cx="12" cy="10" r="3" />
+              </svg>
+              15 minutos da rodoviária
+            </li>
+            <li>
+              <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z" />
+                <circle cx="12" cy="10" r="3" />
+              </svg>
+              Vista panorâmica da serra
+            </li>
+            <li>
+              <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z" />
+                <circle cx="12" cy="10" r="3" />
+              </svg>
+              Trilhas ecológicas acessíveis
+            </li>
+          </ul>
+          <a href="#reservar" class="btn btn-primary">Planejar Minha Visita</a>
+        </div>
+        <div class="location-map fade-in">
+          <iframe src=" https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d926.6477255436503!2d-44.98317488116973!3d-21.71860602125105!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9fd56cf9e98201%3A0x7885b9e8989881ae!2zQ2hhbMOpcyBkbyBCZW50aW5obyBTw6NvIFRob23DqQ!5e0!3m2!1spt-BR!2sbr!4v1777377277911!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>"
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Section -->
+  <section class="cta" id="reservar">
+    <div class="container">
+      <div class="cta-content fade-in">
+        <span class="urgency-badge">🔥 Apenas 3 quartos disponíveis para este fim de semana</span>
+        <h2>Pronto Para Viver Essa Experiência?</h2>
+        <p>Garanta sua estadia e descubra por que somos a escolha preferida de quem busca conforto, natureza e momentos inesquecíveis.</p>
+        <a href="https://wa.me/35998546318" class="btn btn-primary" target="_blank" rel="noopener">
+          Reservar via WhatsApp
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="#" class="logo">Chalés do Bentinho</a>
+          <p>Seu refúgio perfeito na natureza. Conforto, exclusividade e experiências inesquecíveis esperam por você.</p>
+          <div class="social-links">
+            <a href="#" aria-label="Instagram">
+              <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <rect x="2" y="2" width="20" height="20" rx="5" ry="5" />
+                <path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37z" />
+                <line x1="17.5" y1="6.5" x2="17.51" y2="6.5" />
+              </svg>
+            </a>
+            <a href="#" aria-label="Facebook">
+              <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z" />
+              </svg>
+            </a>
+            <a href="#" aria-label="TripAdvisor">
+              <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <circle cx="12" cy="12" r="10" />
+                <path d="M12 6v6l4 2" />
+              </svg>
+            </a>
+          </div>
+        </div>
+        <div class="footer-column">
+          <h4>Links Rápidos</h4>
+          <ul>
+            <li><a href="#beneficios">Benefícios</a></li>
+            <li><a href="#galeria">Galeria</a></li>
+            <li><a href="#quartos">Quartos</a></li>
+            <li><a href="#depoimentos">Depoimentos</a></li>
+            <li><a href="#localizacao">Localização</a></li>
+          </ul>
+        </div>
+        <div class="footer-column">
+          <h4>Contato</h4>
+          <ul class="footer-contact">
+            <li>
+              <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 16.92z" />
+              </svg>
+              (035)99854-6318
+            </li>
+            <li>
+              <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" />
+                <polyline points="22,6 12,13 2,6" />
+              </svg>
+              contato@chaledobentinho.com
+            </li>
+          </ul>
+        </div>
+        <div class="footer-column">
+          <h4>Endereço</h4>
+          <ul class="footer-contact">
+            <li>
+              <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z" />
+                <circle cx="12" cy="10" r="3" />
+              </svg>
+              Rua Inhá Chica, 70<br>
+              Centro - São Tomé das Letras/MG<br>
+              CEP: 37418-000
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 Chalés do Bentinho. Todos os direitos reservados. Criado por EJRibeiro.</p>
+        <div class="footer-bottom-links">
+          <a href="#">Política de Privacidade</a>
+          <a href="#">Termos de Uso</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- JavaScript -->
+  <script>
+    // Header scroll effect
+    const header = document.getElementById('header');
+    window.addEventListener('scroll', () => {
+      if (window.scrollY > 50) {
+        header.classList.add('scrolled');
+      } else {
+        header.classList.remove('scrolled');
+      }
+    });
+
+    // Mobile menu toggle
+    const mobileToggle = document.getElementById('mobileToggle');
+    const navLinks = document.getElementById('navLinks');
+
+    mobileToggle.addEventListener('click', () => {
+      mobileToggle.classList.toggle('active');
+      navLinks.classList.toggle('active');
+    });
+
+    // Close mobile menu on link click
+    document.querySelectorAll('.nav-links a').forEach(link => {
+      link.addEventListener('click', () => {
+        mobileToggle.classList.remove('active');
+        navLinks.classList.remove('active');
+      });
+    });
+
+    // Smooth scroll for anchor links
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+        const target = document.querySelector(this.getAttribute('href'));
+        if (target) {
+          const offsetTop = target.offsetTop - 80;
+          window.scrollTo({
+            top: offsetTop,
+            behavior: 'smooth'
+          });
+        }
+      });
+    });
+
+    // Intersection Observer for fade-in animations
+    const observerOptions = {
+      threshold: 0.1,
+      rootMargin: '0px 0px -50px 0px'
+    };
+
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+        }
+      });
+    }, observerOptions);
+
+    document.querySelectorAll('.fade-in').forEach(el => {
+      observer.observe(el);
+    });
+
+    // Add delay to gallery items for staggered effect
+    document.querySelectorAll('.gallery-item').forEach((item, index) => {
+      item.style.transitionDelay = `${index * 0.1}s`;
+    });
+  </script>
 </body>
 
 </html>
