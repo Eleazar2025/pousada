@@ -133,33 +133,33 @@
       </div>
       <div class="gallery-grid">
         <div class="gallery-item fade-in">
-          <img src="./img/veudenoiva.jpg" alt="Vista principal da pousada">
+          <img src="./img/artemis.png" alt="Vista principal da pousada">
           <div class="gallery-overlay">
-            <span>Cachoeira véu de noiva</span>
+            <span>Artêmis</span>
           </div>
         </div>
         <div class="gallery-item fade-in">
-          <img src="./img/img3.jpg" alt="Quarto luxuoso">
+          <img src="./img/borboletas.png" alt="Quarto luxuoso">
           <div class="gallery-overlay">
-            <span>Leite</span>
+            <span>Borboletas</span>
           </div>
         </div>
         <div class="gallery-item fade-in">
-          <img src="./img/img4.jpg" alt="Área de piscina">
+          <img src="./img/piramide.png" alt="Área de piscina">
           <div class="gallery-overlay">
-            <span>Branco & Preto</span>
+            <span>Pirâmide</span>
           </div>
         </div>
         <div class="gallery-item fade-in">
-          <img src="./img/img1.jpg" alt="Jardim e natureza">
+          <img src="./img/pordosol2.png" alt="Jardim e natureza">
           <div class="gallery-overlay">
-            <span>Roça</span>
+            <span>Por do sol</span>
           </div>
         </div>
         <div class="gallery-item fade-in">
-          <img src="./img/img2.jpg" alt="Restaurante">
+          <img src="./img/piramide3.png" alt="Restaurante">
           <div class="gallery-overlay">
-            <span>Tia Zezé</span>
+            <span>Pirâmide</span>
           </div>
         </div>
       </div>
@@ -176,11 +176,11 @@
       <div class="rooms-grid">
         <div class="room-card fade-in">
           <div class="room-image">
-            <img src="https://images.unsplash.com/photo-1618773928121-c32242e63f39?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Suíte Romântica">
+            <img src="./img/chale1.png" alt="Chalé">
             <span class="room-badge">Mais Popular</span>
           </div>
           <div class="room-content">
-            <h3>Suíte Romântica</h3>
+            <h3>Chalé do Bentinho</h3>
             <p>Perfeita para casais, com vista panorâmica, hidromassagem privativa e decoração sofisticada.</p>
             <div class="room-features">
               <span class="room-feature">
@@ -213,7 +213,7 @@
         </div>
         <div class="room-card fade-in">
           <div class="room-image">
-            <img src="https://images.unsplash.com/photo-1595526114035-0d45ed16cfbf?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Quarto Familiar">
+            <img src="./img/pordosol.png" alt="Quarto Familiar">
           </div>
           <div class="room-content">
             <h3>Quarto Familiar</h3>
@@ -249,11 +249,11 @@
         </div>
         <div class="room-card fade-in">
           <div class="room-image">
-            <img src="https://images.unsplash.com/photo-1595526114035-0d45ed16cfbf?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Suíte Presidencial">
+            <img src="./img/quarto2.png" alt="Suíte Presidencial">
             <span class="room-badge">Exclusivo</span>
           </div>
           <div class="room-content">
-            <h3>Quarto </h3>
+            <h3>Quarto Reservado</h3>
             <p>Sem luxo somente conforto.</p>
             <div class="room-features">
               <span class="room-feature">
@@ -529,72 +529,7 @@
   </footer>
 
   <!-- JavaScript -->
-  <script>
-    // Header scroll effect
-    const header = document.getElementById('header');
-    window.addEventListener('scroll', () => {
-      if (window.scrollY > 50) {
-        header.classList.add('scrolled');
-      } else {
-        header.classList.remove('scrolled');
-      }
-    });
-
-    // Mobile menu toggle
-    const mobileToggle = document.getElementById('mobileToggle');
-    const navLinks = document.getElementById('navLinks');
-
-    mobileToggle.addEventListener('click', () => {
-      mobileToggle.classList.toggle('active');
-      navLinks.classList.toggle('active');
-    });
-
-    // Close mobile menu on link click
-    document.querySelectorAll('.nav-links a').forEach(link => {
-      link.addEventListener('click', () => {
-        mobileToggle.classList.remove('active');
-        navLinks.classList.remove('active');
-      });
-    });
-
-    // Smooth scroll for anchor links
-    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-      anchor.addEventListener('click', function (e) {
-        e.preventDefault();
-        const target = document.querySelector(this.getAttribute('href'));
-        if (target) {
-          const offsetTop = target.offsetTop - 80;
-          window.scrollTo({
-            top: offsetTop,
-            behavior: 'smooth'
-          });
-        }
-      });
-    });
-
-    // Intersection Observer for fade-in animations
-    const observerOptions = {
-      threshold: 0.1,
-      rootMargin: '0px 0px -50px 0px'
-    };
-
-    const observer = new IntersectionObserver((entries) => {
-      entries.forEach(entry => {
-        if (entry.isIntersecting) {
-          entry.target.classList.add('visible');
-        }
-      });
-    }, observerOptions);
-
-    document.querySelectorAll('.fade-in').forEach(el => {
-      observer.observe(el);
-    });
-
-    // Add delay to gallery items for staggered effect
-    document.querySelectorAll('.gallery-item').forEach((item, index) => {
-      item.style.transitionDelay = `${index * 0.1}s`;
-    });
-  </script>
+  <script src="./js/script.js"></script>
 </body>
 
 </html>
