@@ -48,7 +48,9 @@ body {
     line-height: 1.6;
     overflow-x: hidden;
 }
-
+#teste{
+    color: red;  
+}
 /* ========================================
     UTILITIES
 ======================================== */
@@ -61,7 +63,7 @@ body {
 .btn {
     display: inline-block;
     padding: 18px 42px;
-    font-size: 1rem;
+    font-size: 1.2rem;
     font-weight: 500;
     letter-spacing: 0.5px;
     text-decoration: none;
@@ -74,6 +76,12 @@ body {
 .btn-primary {
     background: var(--accent);
     color: var(--white);
+}
+
+.btn-secondary {
+    background: var(--accent);
+    color: var(--white);
+    margin-top:5px;
 }
 
 .btn-primary:hover {
@@ -227,7 +235,7 @@ header.scrolled .mobile-toggle span {
         rgba(26, 26, 26, 0.4) 0%,
         rgba(26, 26, 26, 0.2) 50%,
         rgba(26, 26, 26, 0.4) 100%
-    ), url("./img/matriz.jpg");
+    ), url("./img/igrejapedra.png");
     background-size: cover;
     background-position: center;
     display: flex;
@@ -268,7 +276,7 @@ header.scrolled .mobile-toggle span {
 }
 
 .hero p {
-    font-size: clamp(18px, 2.5vw, 22px);
+    font-size: clamp(24px, 2.5vw, 22px);
     color: rgba(255, 255, 255, 0.9);
     max-width: 600px;
     margin: 0 auto 48px;
